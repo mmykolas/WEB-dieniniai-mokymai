@@ -1,0 +1,29 @@
+/* ---ABOUT SECTION--- */
+.about {
+    background-color: $greybg;
+}
+
+.about .container {
+    padding: 100px 80px;
+}
+
+.about .section-pic {
+    padding: 0 85px 0 0;
+}
+
+.about h2 {
+    font-family: $mont;
+    font-weight: 700;
+    color: $drkgrey;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.about .section-text h3 {
+    font-family: $opensans;
+    color: $grey;
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 20px 0 0 0;
+}
+/* ---ABOUT SECTION END--- */

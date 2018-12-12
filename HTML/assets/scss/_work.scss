@@ -1,0 +1,117 @@
+/* ---WORK SECTION--- */
+.work {
+    background: $whitebg;
+    min-height: 100vh;
+}
+
+.work .section-text {
+    padding: 0 80px 0 135px;
+}
+
+.work .section-text h2 {
+    font-family: $mont;
+    font-weight: 700;
+    color: $drkgrey;
+    font-size: 1.75rem;
+    padding-top: 195px;
+}
+
+.work .section-text h3 {
+    font-family: $opensans;
+    font-weight: 400;
+    color: $grey;
+    font-size: 1rem;
+    line-height: 1.94;
+    padding: 55px 0 20px 0;
+}
+
+.work .container {
+    padding: 150px 0;
+}
+
+.work .section-list h2 {
+    font-family: $mont;
+    font-weight: 700;
+    color: $drkgrey;
+    font-size: 1.125rem;
+    line-height: 0.76;
+}
+
+.work .section-list h3 {
+    font-family: $mont;
+    font-weight: 400;
+    color: $drkgrey;
+    font-size: 0.875rem;
+    padding: 15px 0;
+    line-height: 0.95;
+}
+
+.work .section-list p {
+    font-family: $mont;
+    font-weight: 400;
+    color: $lightgrey2;
+    font-size: 0.8125rem;
+    line-height: 1.25;
+}
+
+.company {
+    padding: 23px 0;
+}
+
+.experience {
+    padding: 0 0 0 25px;
+}
+
+.section-list {
+    border-left: 3px solid $lightgrey;
+    padding: 65px 0 0 0;
+    position: relative;
+    min-width: 50%;
+}
+
+.company1 {
+    &:before {
+    content: "2013";
+    top: 0;
+    @extend %year;
+    }
+    &:after {
+    content: "2012";
+    @extend %year;
+    }
+}
+
+.company2 {
+    margin-top: 34px;
+    &:after {
+    content: "2008";
+    @extend %year;
+    }
+}
+
+.company-logo {
+    position: relative;
+    padding-left: 20px;
+    &:after {
+    content: "";
+    display: block;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    border: 4px solid $lightgrey;
+    position: absolute;
+    top: 18px;
+	left: 0;
+	transform: translateX(calc(-50% - 1.5px));
+    background-color: $greybg2;
+    }
+}
+
+.company-logo img {
+    border-radius: 25px;
+}
+
+.work .btn-holder {
+    text-align: left;
+}
+/* ---WORK SECTION END--- */
