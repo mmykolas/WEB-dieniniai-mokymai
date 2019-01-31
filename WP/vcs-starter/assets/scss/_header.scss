@@ -1,0 +1,37 @@
+/* ---HEADER--- */
+.header {
+    background-color: $blue;
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    z-index: 1;
+}
+
+.header .container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.header .logo {
+    padding: 55px 0;
+    color: $white;
+    font-size: 1.75rem;
+    font-family: $mont;
+    font-weight: 700;
+}
+
+.header-nav li a {
+    display: block;
+    padding: 10px 0;
+    margin: 0 20px;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-family: $mont;
+    font-weight: 700;
+    &:hover {
+        border-bottom: 2px solid #fff;
+    }
+}
+/* ---HEADER END--- */

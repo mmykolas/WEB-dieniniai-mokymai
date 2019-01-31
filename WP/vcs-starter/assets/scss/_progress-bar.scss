@@ -1,0 +1,180 @@
+// -- vars
+$bg-color: #34495e;
+$default-size: 1em;
+$label-font-size: $default-size / 4;
+$label-font-size-redo: $default-size * 4;
+
+// -- placeholders
+%pie-wrapper-text {
+  display: block;
+  position: absolute;
+  bottom: 30%;
+  font-family: $mont;
+  font-weight: 400;
+  color: $lightgrey2;
+  background: none;
+  font-size: 1rem;
+  left: $label-font-size-redo / 10;
+  right: $label-font-size-redo / 10;
+  text-align: center;
+}
+
+// -- mixins
+@mixin size($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+@mixin draw-progress($progress, $color) {
+  .pie {
+    .half-circle {
+      border-color: $color;
+    }
+
+    .left-side {
+      transform: rotate($progress * 3.6deg);
+    }
+
+    @if $progress <= 50 {
+      .right-side {
+        display: none;
+      }
+    } @else {
+      clip: rect(auto, auto, auto, auto);
+
+      .right-side {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.set-size {
+  font-size: 13em;
+}
+
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 150px;
+  font-family: $mont;
+  font-weight: 700;
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+.pie-wrapper {
+  @include size($default-size, $default-size);
+  margin: 15px;
+  position: relative;
+  
+  &:nth-child(4n + 1) {
+    clear: both;
+  }
+    
+  &:first-child:after {
+    content: "User Interface";
+    @extend %pie-wrapper-text;
+  }
+    
+  &:nth-child(2):after {
+    content: "Front-end";
+    @extend %pie-wrapper-text;
+  }
+    
+  &:nth-child(3):after {
+    content: "User Experience";
+    @extend %pie-wrapper-text;
+  }
+    
+  &:last-child:after {
+    content: "Icon design";
+    @extend %pie-wrapper-text;
+  }    
+
+  .pie {
+    @include size(100%, 100%);
+    clip: rect(0, $default-size, $default-size, $default-size / 2);
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    .half-circle {
+      @include size(100%, 100%);
+      border: ($default-size / 10) solid #3498db;
+      border-radius: 50%;
+      clip: rect(0, $default-size / 2, $default-size, 0);
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  .label {
+    background: $bg-color;
+    border-radius: 50%;
+    bottom: $label-font-size-redo / 10;
+    color: #ecf0f1;
+    cursor: default;
+    display: block;
+    font-size: $label-font-size;
+    left: $label-font-size-redo / 10;
+    line-height: $label-font-size-redo * .70;
+    position: absolute;
+    right: $label-font-size-redo / 10;
+    text-align: center;
+    top: $label-font-size-redo / 10;
+
+    .smaller {
+      color: #bdc3c7;
+      font-size: .45em;
+      padding-bottom: 20px;
+      vertical-align: super;
+    }
+  }
+
+  .shadow {
+    @include size(100%, 100%);
+    border: $default-size / 10 solid #bdc3c7;
+    border-radius: 50%;
+  }
+
+  &.style-2 {
+    .label {
+      background: none;
+      color: #7f8c8d;
+
+      .smaller {
+        color: #bdc3c7;
+      }
+    }
+  }
+
+  &.progress-30 {
+    @include draw-progress(30, #3498db);
+  }
+
+  &.progress-60 {
+    @include draw-progress(60, #9b59b6);
+  }
+
+  &.progress-85 {
+    @include draw-progress(85, #35afba);
+  }
+
+  &.progress-45 {
+    @include draw-progress(45, #1abc9c);
+  }
+
+  &.progress-75 {
+    @include draw-progress(75, #34cf75);
+  }
+
+  &.progress-95 {
+    @include draw-progress(95, #e74c3c);
+  }
+}

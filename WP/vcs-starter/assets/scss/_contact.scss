@@ -1,0 +1,125 @@
+/* ---CONTACT SECTION--- */
+.field1 {
+    padding: 20px 20px 20px 40px;
+    @extend %field;
+}   
+
+.field2 {
+    padding: 20px;
+    margin-top: 16px;
+    @extend %field;
+}
+
+.button-red {
+    background-color: $redbg2;
+    color: $white;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 20px 45px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $mont;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 0.85;
+    margin-top: 25px;
+    cursor: pointer;
+    &:hover {
+        border: 2px solid $blue;
+        box-shadow: 0 0 8px 0 $blue;
+    }
+}
+
+.contact4 {
+    text-align: right;
+}
+
+.field_email1 {
+    margin-right: 8px;
+    @extend %field-email;
+}
+
+.field_email1 i {
+    @extend %email-i;
+}
+
+.field_email2 {
+    margin-left: 8px;
+    @extend %field-email;
+}
+
+.field_email2 i {
+    @extend %email-i;
+}
+
+::placeholder {
+    font-family: $mont;
+    font-weight: 400;
+    color: $lightgrey2;
+    font-size: 0.8968rem;
+    &:focus {
+        color: $drkgrey;
+        font-weight: 700;
+    }
+}
+
+.social h3 {
+    font-family: $mont;
+    font-weight: 700;
+    color: $lightgrey2;
+    font-size: 0.8125rem;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+.social .section-text p {
+    font-family: $opensans;
+    font-weight: 400;
+    color: $drkgrey;
+    font-size: 0.9375rem;
+    line-height: 1.3;
+    padding-top: 20px;
+}
+
+.social .section-text {
+    max-width: 180px;
+}
+
+.social-icons a {
+    font-family: $mont;
+    font-weight: 400;
+    color: $drkgrey;
+    font-size: 1rem;
+}
+
+.contact .container {
+    padding: 100px 0 130px 0;
+    max-width: 900px;
+    justify-content: space-between;
+}
+
+.form {
+    width: 70%;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-icons img {
+    vertical-align: middle;
+    padding-right: 25px; 
+}
+
+.social-icons li {
+    padding-top: 20px;
+    opacity: 0.3;
+    &:hover {
+        opacity: 1;
+    }
+}
+/* ---CONTACT SECTION END--- */

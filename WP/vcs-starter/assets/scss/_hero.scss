@@ -1,0 +1,51 @@
+/* ---HERO SECTION--- */
+.hero {
+    background-image: url(../images/hero-background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.hero h1 {
+    font-size: 3.75rem;
+    font-family: $mont;
+    font-weight: 700;
+    @extend %hero-h;
+}
+
+.hero h2 {
+    font-size: 1.125rem;
+    font-family: $mont;
+    font-weight: 400;
+    @extend %hero-h;
+}
+
+.hero .hero-text {
+    text-align: center;
+    align-items: center;
+}
+
+.hero .container {
+    justify-content: center;
+	align-items: center;
+    min-height: 100vh;
+	position: relative;
+}
+
+.hero-arrow {    
+    position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 3.125rem;
+	opacity: .5;
+    padding-bottom: 55px;
+    &:hover {
+        opacity: 1;
+        transition: opacity 2s;
+    }
+}
+
+.hero-arrow a {
+    color: #fff;
+}
+/* ---HERO SECTION END--- */

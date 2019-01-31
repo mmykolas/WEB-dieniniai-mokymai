@@ -1,0 +1,49 @@
+/* ---PLACEHOLDERS--- */
+%field {
+    font-family: $mont;
+    font-weight: 400;
+    color: $lightgrey2;
+    background-color: $white;
+    font-size: 0.8968rem;
+    border: 2px solid $lightgrey3;
+    border-radius: 10px;
+    width: 100%;
+    &:hover {
+        border: 2px solid $lightgrey2;
+    }
+    &:focus {
+        border: 2px solid $blue;
+        box-shadow: 0 0 8px 0 $blue;
+        color: $drkgrey;
+        font-weight: 700;
+    }
+}
+
+%field-email {
+    position: relative;
+    width: calc(50% - 8px);
+}
+
+%email-i {
+    position: absolute;
+    left: 15px;
+    top: 22px;
+    color: $lightgrey2;
+}
+
+%hero-h {
+    color: $white;
+    text-transform: uppercase;
+}
+
+%year {
+    display: block;
+    position: absolute;
+    transform: translateX(calc(-50% - 1.5px));
+    font-family: $mont;
+    font-weight: 700;
+    color: $lightgrey;
+    background-color: $whitebg;
+    font-size: 1.125rem;
+}
+/* ---PLACEHOLDERS END--- */

@@ -1,0 +1,110 @@
+@media only screen and (max-width: 992px) {
+  .portfolio .flex {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    max-height: none;
+  }
+  .img-duoble {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .portfolio .images-container img {
+    width: 100%;
+  }
+  .img-small, .img-large {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .work .section-text h2 {
+    padding-top: 0;
+  }
+  .work .container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .section-list {
+    margin: 0 25px;
+  }
+  .contact .container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+  .form {
+    width: 90%;
+    padding-bottom: 50px;
+  }
+  .social {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .contact .section-text {
+    margin-right: 15px;
+  }
+  footer {
+    padding: 25px;
+  }
+  .navigation {
+    display: block;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header .container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .header .logo {
+    padding: 33px 0 55px 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about .section-pic {
+    padding-right: 15px;
+  }
+  .about .container {
+    padding: 50px 40px;
+  }
+  .img-small, .img-large {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .field_email1, .field_email2 {
+    width: 100%;
+    margin: 16px 0 0 0;
+  }
+  .contact1 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .set-size {
+    font-size: 10em;
+  }
+  .footer-menu {
+    display: none;
+  }
+  .bottom-container {
+    padding: 0;
+  }
+  .work .button {
+    display: block;
+  }
+  .social {
+    padding-left: 25px;
+  }
+}
