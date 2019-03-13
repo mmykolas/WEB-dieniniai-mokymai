@@ -1,8 +1,8 @@
 # WEB programming full-time course project
 
-> Inside HTML folder are static page files and in WP folder you will find WordPress files.
+> Inside HTML folder there are static page's files. WordPress files are in a WP folder.
 > You need to import acf-export.json file inside your WP environment with Advanced Custom Fields.
-> Here is the list of plugins which are used: 
+> Here is a list of plugins that have been used: 
 
 - Advanced Custom Fields PRO
 - Advanced Custom Fields: Font Awesome
